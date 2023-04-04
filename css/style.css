@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+* {
+    margin: 0;
+    border: 0;    
+}
+
+
+/*=============== tabuleiro de jogo ===============*/
+
+.game-board {    
+    width: 100%;
+    height: 500px;
+    border-top: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#47ab97, #b6bdb4);
+}
+
+
+
+
+
+
+.cogumelo {  
+    bottom: 0;
+ 
+    right: -80px;
+    padding-bottom: 34px;
+ 
+
+    position: absolute;
+    width: 40px;  
+}
+
+.cogumelo-Animacao{
+    animation: cogumelo-Animacao  8s linear 5s infinite running; 
+
+    
+}
+
+@keyframes cogumelo-Animacao {
+    from{
+        right: -80px;
+    }
+    to{
+        right: 500%;
+    }
+    
+}
+
+
+
+
+
+
+/*=============== rodape ===============*/
+.rodape {
+
+    height:150px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+.rodape img {
+    height: 158px;
+ padding: 0px 0;
+    bottom: 78px;
+
+
+       width: 100%;
+}
+/*=============== Mario ===============*/
+
+.mario {
+     width: 95px; 
+    position: absolute;
+    bottom: 0;
+    margin-left: 100px;
+    padding-bottom: 34px;
+    z-index: 10;
+}
+/*Jump */
+.jump{
+    animation: mario-jump-Animacao 1500ms ease-out;
+}
+
+@keyframes mario-jump-Animacao {
+    0%{
+        bottom: 0px;
+    }
+    45%{
+        bottom: 180px
+    }
+    55%{
+        bottom: 180px;
+    }
+    100%{
+        bottom:0px;
+    }
+    
+}
+
+
+
+
+
+
+/*=============== Cenário ===============*/
+
+/*Tubo*/
+.tubo {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    right: -80px;
+    padding-bottom: 34px;
+    z-index: 10;
+}
+
+.tubo-Animacao{
+ 
+    animation: tubo-Animacao 2s linear 1s infinite running; 
+}
+
+@keyframes tubo-Animacao {
+    from{
+        right: -80px;
+    }
+    to{
+        right: 100%;
+    }
+    
+}
+
+/*grama */
+.grama {
+    position: absolute;
+    bottom: 0;
+    width: 160px;
+    right: -160px;
+    padding-bottom: 34px;
+}
+
+.grama-Animacao{
+    animation: grama-Animacao 3s infinite linear;
+}
+
+@keyframes grama-Animacao {
+    from{
+        right: -80px;
+    }
+    to{
+        right: 100%;
+    }
+    
+}
+
+
+/*Piso*/
+.piso {
+        width: 1500px;
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 34px;
+       
+}
+.piso-1{
+    position: absolute;      
+    z-index: 0;
+}
+
+.piso-Animacao-1{
+    animation: piso-Animacao-1 3.1s infinite linear;
+}
+
+@keyframes piso-Animacao-1 {
+    0%{
+        right:0px;
+    }
+    100%{
+        right: 100%;    
+    }
+}
+
+
+.piso-2{
+    position: absolute; 
+    right: -1500px;
+    z-index: 10;
+}
+
+.piso-Animacao-2{
+    animation: piso-Animacao-2 6.2s infinite linear;
+}
+
+@keyframes piso-Animacao-2 {
+    0%{
+        right:-1500px;
+    }
+    100%{
+        right: 100%;    
+    }
+}
+
+
+.piso-3{
+    position: absolute;  
+    right: -1500px;
+    z-index: 10;
+}
+
+.piso-Animacao-3{
+    animation: piso-Animacao-3 6.2s infinite linear;
+}
+
+@keyframes piso-Animacao-3 {
+    0%{
+        right:-1500px;
+    }
+    100%{
+        right: 100%;    
+    }
+}
+
+
+
+
+/*Nuvens*/
+.nuvens-1 {
+    position: absolute;
+    width: 550px;
+    padding-top: 50px;
+    z-index: 4;
+    animation: nuvens-Animacao-1 40s infinite linear;
+}
+.nuvens-2 {
+    position: absolute;
+    width: 270px;
+    padding-top: 150px;
+    z-index: 3;
+    animation: nuvens-Animacao-2 50s infinite linear;
+}
+.nuvens-3 {
+    position: absolute;
+    width: 150px;
+    padding-top: 300px;
+    z-index: 2;
+    animation: nuvens-Animacao-3 75s infinite linear;
+}
+
+
+@keyframes nuvens-Animacao-1 {
+    from{
+        right: -550px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes nuvens-Animacao-2 {
+    from{
+        right: -1300px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes nuvens-Animacao-3 {
+    from{
+        right: -250px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+
