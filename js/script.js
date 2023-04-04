@@ -55,7 +55,7 @@ const start = () => {
 
     function pisoAnimacao3() {
         piso3.classList.add('piso-Animacao-3');
-    } setInterval(pisoAnimacao3, 3100);
+    } setInterval(pisoAnimacao3, 3000);
 
 
     audioJogo.play();
